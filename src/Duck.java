@@ -1,4 +1,4 @@
-public class Duck extends Animal {
+public class Duck extends Animal implements CanFly {
     private String color;
 
     public Duck(String name, Integer age, String genre, String color) {
@@ -10,6 +10,7 @@ public class Duck extends Animal {
         return color;
     }
 
+    @Override
     public void fly(){
         System.out.printf("%s esta volando%n", getName());
     }
