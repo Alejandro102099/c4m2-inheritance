@@ -1,4 +1,4 @@
-public class Fish extends Animal {
+public class Fish extends Animal implements CanSwin {
     private String color;
     private boolean formSea;
     public Fish(String name, Integer age, String genre, String color, boolean forSea) {
@@ -15,6 +15,7 @@ public class Fish extends Animal {
         return formSea;
     }
     
+    @Override
     public void swin(){
         System.out.printf("%s esta nadando%n", getName());
     }

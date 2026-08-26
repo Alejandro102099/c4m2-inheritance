@@ -34,5 +34,16 @@ public class App {
         System.out.println("El "+ duck.getName() + " tiene " + duck.getAge() + " años");
         System.out.println("El "+ duck.getName() + " " + (duck.canPutEggs() ? " si" : " no") + " puede poner huevos ");
         
+        CanSwin animal1 = new Fish("Santiago", 15, "macho", "Azul", false);
+        animal1.swin();
+        CanSwin animal2 = new Duck("Carolina", 5, "hembra", "cafe");
+        animal2.wait();
+        CanFly animal3 = (CanFly) animal2;
+        animal3.fly();
+        Animal animal4 = (Animal) animal3;
+        animal4.happyBirthday();
+        animal4.makeNoice();
     }
+
+
 }

@@ -1,4 +1,4 @@
-public class Lion extends Animal {
+public class Lion extends Animal implements CanRun {
     private String color;
 
     public Lion(String name, Integer age, String genre, String color) {
@@ -10,21 +10,22 @@ public class Lion extends Animal {
         return color;
     }
 
-   public void roar(){
-    System.out.printf("%s esta rujiendo%n", getName());
-   } 
+    public void roar(){
+        System.out.printf("%s esta rujiendo%n", getName());
+    } 
 
-   public void run(){
-    System.out.printf("%s esta corriendo%n", getName());
-   }
+    @Override
+    public void run(){
+        System.out.printf("%s esta corriendo%n", getName());
+    }
 
-   @Override
-   public void hunt() {
-    System.out.printf("%s se esconde, se mueve sigilozamente y ataca%n", getName());  
-   }
+    @Override
+    public void hunt() {
+        System.out.printf("%s se esconde, se mueve sigilozamente y ataca%n", getName());  
+    }
 
-   @Override
-   public void makeNoice() {
-       roar();
-   }
+    @Override
+    public void makeNoice() {
+        roar();
+    }
 }
