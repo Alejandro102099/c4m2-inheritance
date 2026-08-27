@@ -37,7 +37,7 @@ public class App {
         CanSwin animal1 = new Fish("Santiago", 15, "macho", "Azul", false);
         animal1.swin();
         CanSwin animal2 = new Duck("Carolina", 5, "hembra", "cafe");
-        animal2.wait();
+        animal2.swin();
         CanFly animal3 = (CanFly) animal2;
         animal3.fly();
         Animal animal4 = (Animal) animal3;
